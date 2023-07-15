@@ -35,7 +35,7 @@ l2=[]
 for x in range(0,len(l1)):
     l2.append(0)
 # TESTING DATA 
-tr=pd.read_csv("/Users/priyanshu/Documents/Projects/Disease Prediction/Testing.csv")
+tr=pd.read_csv("Testing.csv")
 tr.replace({'prognosis':{'Fungal infection':0,'Allergy':1,'GERD':2,'Chronic cholestasis':3,'Drug Reaction':4,
 'Peptic ulcer diseae':5,'AIDS':6,'Diabetes ':7,'Gastroenteritis':8,'Bronchial Asthma':9,'Hypertension ':10,
 'Migraine':11,'Cervical spondylosis':12,
@@ -49,7 +49,7 @@ X_test= tr[l1]
 y_test = tr[["prognosis"]] 
 np.ravel(y_test)
 # TRAINING DATA 
-df=pd.read_csv("/Users/priyanshu/Documents/Projects/Disease Prediction/Training.csv")
+df=pd.read_csv("Training.csv")
 df.replace({'prognosis':{'Fungal infection':0,'Allergy':1,'GERD':2,'Chronic cholestasis':3,'Drug Reaction':4,
 'Peptic ulcer diseae':5,'AIDS':6,'Diabetes ':7,'Gastroenteritis':8,'Bronchial Asthma':9,'Hypertension ':10,
 'Migraine':11,'Cervical spondylosis':12,
